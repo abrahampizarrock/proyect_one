@@ -77,6 +77,4 @@ test:
 #
 production:
   <<: *default
-  database: proyect_one_production
-  username: proyect_one
-  password: <%= ENV["PROYECT_ONE_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
